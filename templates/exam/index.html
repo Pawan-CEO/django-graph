@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{%load static %}
+<html>
+    <title>Index exam </title>
+    <link rel="stylesheet" href="{% static 'css/freestyle.css' %}">
+<head>
+</head>
+<body>
+<h2 class="pawan">Heading</h2>
+<p>this is first para.</p>
+{% comment %} <img src="{% static 'images/pawan.jpg'%}" height="400px" width="600px"/> {% endcomment %}
+
+{% if chart %}
+    <img src="data:image/png;base64, {{chart|safe}}">
+{% endif %}
+
+
+
+
+</body>
+</html>
